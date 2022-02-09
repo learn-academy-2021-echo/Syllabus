@@ -37,7 +37,7 @@ Now that we are working in a new stack, the way we find error messages is going 
 ---
 
 ### React Components in a Rails Application
-There are many ways to create a full-stack application. One option is creating two separate applications to handle the frontend and backend like we did in Cat Tinder. Anther option is configuring a Rails app to serve React components. We'll need a couple commands to add the appropriate gems, folders, and JavaScript compilers.
+There are many ways to create a full-stack application. One option is creating two separate applications to handle the frontend and backend like we did in Cat Tinder. Another option is configuring a Rails app to serve React components. We'll need a couple commands to add the appropriate gems, folders, and JavaScript compilers.
 - $ `bundle add react-rails`
 - $ `rails webpacker:install:react`
 - $ `rails generate react:install`
@@ -54,7 +54,7 @@ class App extends Component {
     return(
       <>
         <h1>Hello World!</h1>
-      <>
+      </>
     )
   }
 }
@@ -152,7 +152,7 @@ Import the React-router and appropriate pages.
 **app/javascript/components/App.js**
 ```javascript
 import {
-  BrowserRouter as  Router,
+  BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom'
@@ -187,7 +187,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
-import { Nav, NavItem } from 'reactstrap'
+import { Nav, NavItem, NavLink } from 'reactstrap'
 import AboutUs from './pages/AboutUs'
 import LearnMore from './pages/LearnMore'
 import Home from './pages/Home'
