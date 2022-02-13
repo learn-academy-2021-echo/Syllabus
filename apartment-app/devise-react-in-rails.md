@@ -149,7 +149,7 @@ class App extends Component {
             <a href={sign_in_route}>Sign In</a>
           </div>
         }
-      <>
+      </>
     )
   }
 }
